@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Upload Candidates</title>
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+
+	<body>
+        <div class="modal">
+        	<h2>Add from Excel</h2>
+			<div class="container shadow">
+				<h3>Add candidates from excel</h3>
+    			<div class="container shadow">
+          
+      			<div id="upload-box" class="upload-box">
+				<i class="fas fa-cloud-upload-alt"></i>
+				<p>Upload a .xlsx or .xls file here</p>
+				<form action="candidates" method="post" id="upload-form" enctype="multipart/form-data">
+				<input type="file" name="uploadFile" id="file-input" accept=".xlsx, .xls">
+				</form>
+			</div>
+
+			<div id="file-info-box" class="file-info-box" style="display: none;">
+				<i class="fas fa-cloud-upload-alt icon"></i>
+				<p id="file-name"></p>
+				<button id="submit-button">Submit</button>
+			</div>
+
+			<div id="message-box" class="message-box" style="display: none;">
+				<p id="message">
+					<h3>Thank You </h3>
+					<h3><i class="fas fa-check-circle"></i>File sucessfully uploaded.</h3>
+					<h3>Your records will be processed shortly.</h3>
+				</p>
+			</div>
+    	</div>
+
+		<div id="footer">
+			<p>Made with ❤️ by Sriram</p>
+		</div>
+		
+		
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="/script.js"></script>
+	</body>
+</html>
+
